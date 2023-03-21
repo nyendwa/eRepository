@@ -49,4 +49,8 @@
     <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
 </Project>
