@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\AfricanHistory.jpg" />
+    <None Remove="Assets\AnimalFarm.jpg" />
+    <None Remove="Assets\EnglishLiterature.jpg" />
+    <None Remove="Assets\Finance\CarolAlexander.jpg" />
+    <None Remove="Assets\Finance\Dauderis.png" />
+    <None Remove="Assets\Finance\Fibonacci.jpg" />
+    <None Remove="Assets\HistoryofEnglishLiterature.jpg" />
+    <None Remove="MyLib.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\AfricanHistory.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AnimalFarm.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\EnglishLiterature.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Finance\CarolAlexander.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Finance\Dauderis.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Finance\Fibonacci.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\HistoryofEnglishLiterature.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MyLib.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+  </ItemGroup>
+
+</Project>

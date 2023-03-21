@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="MyBookHub.LiteratureUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MyBookHub"
+             mc:Ignorable="d" 
+             Height="auto" Width="auto">
+    <Grid>
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Height="350" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Showcard Gothic" FontSize="12" Text="George Owell" Foreground="#FFC00000"/>
+                        <Image Source="Assets/AnimalFarm.jpg" Width="200" Height="150" Stretch="UniformToFill" />
+                        <TextBlock Margin="5" Text="About" FontSize="12"/>
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
+                            Animal Farm is a beast fable, in the form of a satirical allegorical novella, by George Orwell, first published in England on 17 August 1945. It tells the story of a group of farm animals who rebel against their human farmer, hoping to create a society where the animals can be equal, free, and happy.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                            <Button Width="100" Content="Print Book" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Column="1" Height="350" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Showcard Gothic" FontSize="12" Text="Andrew Sanders" Foreground="#FFC00000"/>
+                        <Image Source="Assets/HistoryofEnglishLiterature.jpg" Width="200" Height="150" Stretch="UniformToFill" />
+                        <TextBlock Margin="5" Text="About" FontSize="12"/>
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
+                            The Short Oxford History of English Literature provides a comprehensive and authoritative introductory guide to the literature 
+                            of the British Isles from the Anglo-Saxon period to the present day, including a full treatment of Irish, Scottish, 
+                            and Welsh writing in English
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                            <Button Width="100" Content="Print Book" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="2" Height="350" Background="#FFF3F3F3" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Showcard Gothic" FontSize="14" Text="William J. Long" Foreground="#FFC00000"/>
+                        <Image Source="Assets/EnglishLiterature.jpg" Width="200" Height="150" Stretch="UniformToFill" />
+                        <TextBlock Margin="5" Text="About" FontSize="12"/>
+                        <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
+                            "English Literature: Its History and Its Significance for the Life of the English-Speaking World" by William J. Long 
+                            resents the whole splendid history of English literature from Anglo-Saxon times to the close of the Victorian Era.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                            <Button Width="100" Content="Print Book" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>
