@@ -12,6 +12,8 @@
         WindowStartupLocation="CenterScreen"
         FontWeight="Bold"
         Icon="MyLib.ico">
+    
+    
     <Grid Background="#80A7FF"  MouseDown="Grid_MouseDown">
         <StackPanel VerticalAlignment="Top">
             <Grid Background="#FF0069C0" Height="10"/>
