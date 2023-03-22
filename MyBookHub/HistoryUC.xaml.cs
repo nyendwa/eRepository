@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,11 +29,26 @@ namespace MyBookHub
         {
             try
             {
-                this.IsEnabled = false;
-                PrintDialog printDialog = new PrintDialog();
-                if(printDialog.ShowDialog() == true) 
+                //get the pdf file the user selected
+                OpenFileDialog openFileDialog = new OpenFileDialog
                 {
-                    printDialog.PrintVisual(print,"HistoryUC");
+                    DefaultExt = ".pdf",
+                    Filter = "PDF files (*.pdf)|*.pdf|All files (*.*)|*.*"
+                };
+                bool? fileOpenResult = openFileDialog.ShowDialog();
+                if (fileOpenResult != true)
+                {
+                    return;
+                }
+
+                //show a printdialog to user where attributes can be changed
+                PrintDialog printDialog = new PrintDialog();
+                printDialog.PageRangeSelection = PageRangeSelection.AllPages;
+                printDialog.UserPageRangeEnabled = true;
+                bool? doPrint = printDialog.ShowDialog();
+                if (doPrint != true)
+                {
+                    return;
                 }
             }
 
